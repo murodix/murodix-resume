@@ -1,0 +1,147 @@
+@use "../../scss/mixins";
+@use "../../scss/vars";
+
+.nav_wrap {
+  background-color: transparent;
+  font-size: 12px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .nav {
+    min-height: 48px;
+    width: auto;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      padding: 8px 13px;
+      line-height: 32px;
+      text-decoration: none;
+      text-align: left;
+      color: #fff;
+
+      cursor: pointer;
+      @include mixins.vendor-prefix("transition", "color 0.2s ease-in-out");
+
+      &.active {
+        color: vars.$secondary-color;
+        font-weight: bold;
+        background: #50e3c20a;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  ul,
+  li,
+  a {
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+
+  &--opaque {
+    background-color: vars.$primary-color;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  a.mobile-btn {
+    display: none;
+  }
+}
+
+/* mobile navigation
+    -------------------------------------------------------------------- */
+@include mixins.media-breakpoint(md) {
+  .nav_wrap {
+    font-size: 12px;
+    background: transparent;
+    letter-spacing: 1.5px;
+    width: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    > a {
+      width: 48px;
+      height: 48px;
+      text-align: left;
+      background-color: #292e32;
+      position: relative;
+      border: none;
+      float: right;
+
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+
+      position: relative;
+      top: 0px;
+      right: 30px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        border: 2px solid #fff;
+        top: 35%;
+        left: 25%;
+        right: 25%;
+        content: "";
+      }
+
+      &::after {
+        top: 60%;
+      }
+    }
+
+    &:not(:target) > a:first-of-type,
+    &:target > a:last-of-type {
+      display: block;
+    }
+
+    .nav {
+      height: auto;
+      display: none;
+      clear: both;
+      width: auto;
+      float: right;
+
+      position: relative;
+      top: 12px;
+      right: 0;
+
+      > a {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 4%;
+        text-align: center;
+        border-bottom: 1px solid #2d2e34;
+        border-bottom-style: dotted;
+      }
+    }
+
+    &:target .nav {
+      display: block;
+      padding: 30px 20px 25px 20px;
+      background: #1f2024;
+      margin: 0 30px;
+      clear: both;
+    }
+
+    &:target .nav > a:last-of-type {
+      border-bottom: 0px;
+    }
+  }
+}

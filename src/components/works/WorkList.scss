@@ -1,0 +1,7 @@
+@use "../../scss/mixins";
+
+.work {
+        @include mixins.media-breakpoint(md)  {
+            margin-bottom: 0 !important;
+        }
+}

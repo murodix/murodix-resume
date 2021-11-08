@@ -1,0 +1,88 @@
+@import '../../scss/vars';
+
+.resume {
+  background: $primary-color;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+
+  .option_span {
+    color: white;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  h1 span {
+    border-bottom: 3px solid $secondary-color;
+    padding-bottom: 6px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+
+  .header-col {
+    padding-top: 9px;
+  }
+  .main-col {
+    padding-right: 10%;
+  }
+
+  .work {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $secondary-color;
+  }
+
+  .works {
+    padding-top: 30px;
+  }
+
+  .work_logo {
+    height: 30px;
+    cursor: pointer;
+
+    &--md {
+      height: 40px;
+    }
+  }
+
+  .info {
+    font-size: 16px;
+    color: #b5b5b5;
+    margin-bottom: 5px;
+    margin-top: 9px;
+    font-weight: bold;
+  }
+
+  .description {
+    color: #a0a0a0;
+  }
+
+  .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .date {
+    font-size: 15px;
+    margin-top: 6px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .resume .work_logo {
+    display: block;
+    margin: auto;
+  }
+
+  .resume .row {
+    display: block;
+  }
+}

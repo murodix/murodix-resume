@@ -1,0 +1,66 @@
+@import '../../scss/vars';
+
+.skill .skill_message {
+  color: white;
+  margin-bottom: 24px;
+}
+
+.skill_name {
+  color: white !important;
+}
+
+.bar-expand-container {
+  width: 85%;
+  background: #747474;
+  height: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.bar-expand {
+  background: $secondary-color;
+  height: 7px;
+}
+
+.skills-list {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 33.33%;
+    padding-bottom: 30px;
+    p {
+      margin: 0;
+    }
+    .skill-image {
+      height: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .skills-list {
+    .skill-item {
+      .skill-image {
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-list {
+    .skill-item {
+      flex-basis: 50%;
+      .skill-image {
+        height: 120px;
+      }
+    }
+  }
+}

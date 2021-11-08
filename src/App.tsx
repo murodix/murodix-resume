@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react';
+import Header from './pages/header/Header';
+import About from './pages/about/About';
+import Resume from './pages/resume/Resume';
+import Portfolio from './pages/porfolio/Portfolio';
+import Footer from './pages/footer/Footer';
+import './App.scss';
+import '../src/scss/default.scss'
 
-function App() {
+
+
+const App = () => {
+
+  const [storedData, setstoredData] = useState<any>({});
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setstoredData(data);
+      })
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header data={storedData.header} />
+      <About data={storedData.about} />
+      <Resume data={storedData.resume}/>
+      <Portfolio data={storedData.portfolio}/>
+      <Footer data={storedData.footer} />
     </div>
   );
 }

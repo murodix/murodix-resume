@@ -1,0 +1,265 @@
+@use '../scss/vars';
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #838c95;
+  width: 100%;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  font-family: vars.$font-family;
+}
+
+body {
+  margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: vars.$secondary-color vars.$primary-color;
+
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: vars.$primary-color;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: vars.$secondary-color;   
+  border: 3px solid vars.$secondary-color; 
+}
+
+/*  2. Typography
+        Vertical rhythm with leading derived from 6
+ --------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #313131;
+  font-weight: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+h1 {
+  font-size: 38px;
+  line-height: 42px;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 6px;
+}
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+h5 {
+  font-size: 18px;
+  line-height: 30px;
+}
+h6 {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+p {
+  margin: 0 0 30px 0;
+}
+p img {
+  margin: 0;
+}
+
+/* for 'em' and 'strong' tags, font-size and line-height should be same with
+ the body tag due to rendering problems in some browsers */
+em {
+  font: 15px/30px "opensans-italic", sans-serif;
+}
+
+
+
+/*  3. Links  ------------------------------------------------------- */
+
+/*  4. List  --------------------------------------------------------- */
+
+/*  5. Images  --------------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Grid
+ ---------------------------------------------------------------------
+    gutter = 40px.
+ /* ------------------------------------------------------------------ */
+
+/* default
+ --------------------------------------------------------------- */
+.row {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+/* fixed width for IE8 */
+.ie .row {
+  width: 1000px;
+}
+
+.narrow .row {
+  max-width: 980px;
+}
+
+.row .row {
+  width: auto;
+  max-width: none;
+  margin: 0 -20px;
+}
+
+/* row clearing */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.column,
+.columns {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
+}
+
+.row .three {
+  width: 25%;
+}
+
+.row .nine {
+  width: 75%;
+}
+
+.row .twelve {
+  width: 100%;
+}
+
+.bgrid-quarters [class*="column"] {
+  width: 25%;
+}
+
+/* smaller screens
+ --------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+  .s-bgrid-quarters [class*="column"] {
+    width: 25%;
+  }
+}
+
+/* mobile wide/smaller tablets
+ --------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .row {
+    width: 460px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .column,
+  .columns {
+    width: auto !important;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 30px;
+  }
+  .row .row {
+    width: auto;
+    max-width: none;
+    margin: 0 -30px;
+  }
+
+  [class*="column"] + [class*="column"]:last-child {
+    float: none;
+  }
+  [class*="bgrid"] [class*="column"] + [class*="column"]:last-child {
+    float: none;
+  }
+}
+
+/* mobile narrow
+ --------------------------------------------------------------- */
+@media only screen and (max-width: 460px) {
+  .row {
+    width: auto;
+  }
+}
+
+/* larger screens
+ --------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  .wide .row {
+    max-width: 1180px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Header Styles
+  -------------------------------------------------------------------- */
+  header .banner-text h1 {
+    font: 68px/1.1em vars.$font-family;
+  }
+  header .banner-text h3 {
+    font: 16px/1.9em vars.$font-family;
+    width: 85%;
+  }
+
+  /* scrolldown link */
+  header .scrolldown {
+    display: none;
+  }
+
+  /* About Section
+  -------------------------------------------------------------------- */
+  #about .profile-pic {
+    display: none;
+  }
+
+  #about .main-col {
+    padding-right: 30px;
+  }
+}

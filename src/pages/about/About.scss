@@ -1,0 +1,48 @@
+@use '../../scss/vars';
+
+#about {
+    background: vars.$secondary-color;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ #about .row {
+    display: flex;
+ }
+ 
+ #about a, #about a:visited  { color: #fff; }
+ #about a:hover, #about a:focus { color: vars.$secondary-color; }
+ 
+ #about h2 {
+    font: 22px/30px;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #about p {
+    line-height: 30px;
+    color: vars.$primary-color;
+ }
+ 
+ #about .about_bio {
+    text-align: justify;
+ }
+ 
+ #about .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #about .contact-details { width: 41.66667%; }
+ #about .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #about .main-col { padding-right: 5%; }
+
+ @media only screen and (max-width: 767px) {
+   #about .row {
+      display: block;
+   }
+ }
+ 
