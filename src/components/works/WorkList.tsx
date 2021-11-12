@@ -30,7 +30,7 @@ export default function WorkList({ works }) {
 
     return (
         <div className="row work">
-            <div className="three columns header-col">
+            <div className="three columns">
                 <h1>
                     <span className="option_span">Work</span>
                 </h1>

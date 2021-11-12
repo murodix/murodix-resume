@@ -31,7 +31,7 @@ export default function EducationList({ educationList }) {
 
     return (
         <div className="row education">
-            <div className="three columns header-col">
+            <div className="three columns">
                 <h1>
                     <span className="option_span">Education</span>
                 </h1>

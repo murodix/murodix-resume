@@ -27,35 +27,17 @@
     font-size: 25px;
   }
 
-  .header-col {
-    padding-top: 9px;
-  }
   .main-col {
     padding-right: 10%;
-  }
-
-  .work {
-    margin-bottom: 48px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid $secondary-color;
   }
 
   .works {
     padding-top: 30px;
   }
 
-  .work_logo {
-    height: 30px;
-    cursor: pointer;
-
-    &--md {
-      height: 40px;
-    }
-  }
-
   .info {
     font-size: 16px;
-    color: #b5b5b5;
+    color: lightgray;
     margin-bottom: 5px;
     margin-top: 9px;
     font-weight: bold;
@@ -73,6 +55,7 @@
   .date {
     font-size: 15px;
     margin-top: 6px;
+    font-weight: 300;
   }
 }
 

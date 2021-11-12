@@ -1,11 +1,16 @@
-@import '../../scss/vars';
+@use "../../scss/vars";
+@use "../../scss/mixins";
+
+.skill {
+  border-bottom: vars.$secondary-color solid 1px;
+}
 
 .skill .skill_message {
   color: white;
   margin-bottom: 24px;
 }
 
-.skill_name {
+.skill__name {
   color: white !important;
 }
 
@@ -18,7 +23,7 @@
 }
 
 .bar-expand {
-  background: $secondary-color;
+  background: vars.$secondary-color;
   height: 7px;
 }
 
@@ -28,17 +33,41 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  .skill-item {
+  .skill__item {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     flex-basis: 33.33%;
     padding-bottom: 30px;
+
     p {
       margin: 0;
     }
-    .skill-image {
+
+    &:hover {
+      .skill__item__image {
+        opacity: 0.2;
+      }
+
+      .skill__item__level {
+        position: absolute;
+        display: block;
+        top: 30%;
+        > p {
+          color: white;
+          @include mixins.rem("font-size", 24px);
+        }
+      }
+    }
+
+    &__level {
+      display: none;
+    }
+
+    &__image {
       height: 150px;
     }
   }
@@ -46,8 +75,8 @@
 
 @media only screen and (max-width: 1024px) {
   .skills-list {
-    .skill-item {
-      .skill-image {
+    .skill__item {
+      &__image {
         height: 120px;
       }
     }
@@ -56,11 +85,8 @@
 
 @media only screen and (max-width: 768px) {
   .skills-list {
-    .skill-item {
+    .skill__item {
       flex-basis: 50%;
-      .skill-image {
-        height: 120px;
-      }
     }
   }
 }

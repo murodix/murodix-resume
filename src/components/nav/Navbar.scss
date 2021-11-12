@@ -35,6 +35,12 @@
         background: #50e3c20a;
         border-radius: 50px;
       }
+
+      &:hover {
+        border-radius: 50px;
+        color: vars.$secondary-color;
+        background: #50e3c20a;
+      }
     }
   }
 

@@ -1,7 +1,23 @@
 @use "../../scss/mixins";
+@use "../../scss/vars";
 
 .work {
-        @include mixins.media-breakpoint(md)  {
-            margin-bottom: 0 !important;
-        }
+  @include mixins.media-breakpoint(md) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid vars.$secondary-color;
+}
+
+.work_logo {
+  height: 30px;
+  cursor: pointer;
+
+  &--md {
+    height: 40px;
+  }
 }
