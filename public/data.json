@@ -24,7 +24,7 @@
             },
             {
                 "id": "portfolio",
-                "description": "Portfolio",
+                "description": "Works",
                 "offset": 0,
                 "isDynamic": true,
                 "class": "",
@@ -162,9 +162,24 @@
             {
                 "name": "Sass",
                 "image": "../images/skills/sass.png",
-                "level": "75%"
+                "level": "70%"
+            }
+        ],
+        "testimonials" : [
+            {
+                "name": "Rodrigo Hammerly",
+                "ocupation": "Senior Software Consultant at Blue Harvest",
+                "description": "Luis is a highly motivated developer, fast learner and very responsible team member, he is able to work smoothly, seamlessly and efficiently with other group members. He is also very proactive and unafraid of learning new technologies or getting new responsibilities.",
+                "url": "https://www.linkedin.com/in/hammerlyrodrigo/"
+            },
+            {
+                "name": "Alberto Morillo",
+                "ocupation": "Senior DBA Consultant",
+                "description": "Luis is proficient designing relational databases and using Transact-SQL. No employer will ever regret to contract him.",
+                "url": "https://www.linkedin.com/in/alberto-morillo-b0798521/"
             }
         ]
+
     },
     "portfolio": {
         "projects": [
