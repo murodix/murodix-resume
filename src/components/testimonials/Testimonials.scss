@@ -8,11 +8,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #202326;
     padding: 0 40px;
     margin-bottom: 10px;
     text-align: center;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
     @include mixins.media-breakpoint(md) {
       padding: 0 10px;
@@ -50,6 +48,27 @@
       font-weight: bold;
       padding-right: 10px;
       color: lightgray;
+    }
+  }
+
+  .testimonial__carousel {
+    .rec-arrow {
+      background-color: #50e3c233;
+      &:hover {
+        background-color: vars.$secondary-color;
+      }
+    }
+
+
+    .rec-dot {
+      &:hover {
+        box-shadow: 0 0 1px 3px #50e3c233;
+      }
+    }
+
+    .rec-dot_active {
+      background-color: #50e3c383;
+      box-shadow: 0 0 1px 3px #3dc5a833;
     }
   }
 }
