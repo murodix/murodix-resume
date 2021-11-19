@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "./vars";
 
 @mixin vendor-prefix($prop, $value) {
@@ -19,9 +20,9 @@
 }
 
 @function strip-units($number) {
-  @return $number / ($number * 0 + 1);
+  @return math.div($number,($number * 0 + 1));
 }
 
 @mixin rem($property, $value) {
-  #{$property}: (strip-units($value) / 16) + rem;
+  #{$property}: (math.div(strip-units($value), 16)) + rem;
 }

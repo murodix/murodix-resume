@@ -19,7 +19,6 @@ function Testimonials({ testimonials }) {
                                     {testimonial.description}
                                 </h5>
                                 <div className="author__container">
-
                                     <div className="author__info">
                                         <p className="author__name">
                                             {testimonial.name}

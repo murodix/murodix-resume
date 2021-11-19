@@ -72,7 +72,7 @@
     },
     "about": {
         "name": "Luis Munoz",
-        "image": "src/assets/images/about/programming.png",
+        "image": "../images/avatar.png",
         "bio": "Hey humans! I am Luis Munoz! but usally people call me Munoz. I'm Software Engineer and a technology enthusiast, I have a good understanding of technological trends, development and an expert at applying my programming skills to solve complex challenges. I am comfortable working either independently or as part of a team and able to take a leadership role. I'm dedicated to my own continual self-development, but I like working closely with others, I have an eye for detail and identifying problems.",
         "address": {
             "street": "232 Linden Ave",
@@ -184,13 +184,13 @@
     "portfolio": {
         "projects": [
             {
-                "title": "AngularJS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
+                "title": "Netflix-clone",
+                "category": "ReactJS, Sass",
+                "image": "netflix-app.gif",
+                "url": "https://naughty-albattani-970f28.netlify.app"
             },
             {
-                "title": "React JS",
+                "title": "Angular JS",
                 "category": "",
                 "image": "background-alternative.png",
                 "url": ""

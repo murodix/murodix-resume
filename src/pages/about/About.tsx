@@ -1,6 +1,4 @@
-import React from 'react';
 import '../about/About.scss';
-import picture from '../../assets/images/about/programming.png'
 
 
 const About = ({ data }) => {
@@ -18,7 +16,7 @@ const About = ({ data }) => {
                 <div className="three columns">
                     <img
                         className="profile-pic"
-                        src={picture}
+                        src={profilepic}
                         alt="Munoz's Profile Pic"
                     />
                 </div>
@@ -38,7 +36,6 @@ const About = ({ data }) => {
                                 </span>
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>

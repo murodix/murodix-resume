@@ -7,7 +7,7 @@ const Portfolio = ({ data }) => {
       return (
         <div key={index} className="columns portfolio-item">
           <div className="item-wrap">
-            <a href={projects.url} title={projects.title}>
+            <a href={projects.url} title={projects.title} target="_blank" rel="noopener noreferrer">
               <img alt={projects.title} src={projectImage} />
               <div className="overlay">
                 <div className="portfolio-item-meta">
@@ -29,7 +29,7 @@ const Portfolio = ({ data }) => {
     <section id="portfolio">
       <div className="row">
         <div className="twelve columns collapsed">
-          <h1>Coming soon.</h1>
+          <h1>Projects</h1>
 
           <div
             id="portfolio-wrapper"
