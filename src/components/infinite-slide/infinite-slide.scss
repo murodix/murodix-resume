@@ -1,0 +1,32 @@
+@use "../../scss/animations" as *;
+
+.infiniteSlide {
+  overflow: hidden;
+  position: relative;
+  min-width: 1020px;
+
+  &__content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    animation: slide 5s linear infinite;
+    height: 100px;
+  }
+
+  &__fade {
+    background: linear-gradient(
+      to right,
+      #292e32 0%,
+      rgba(22, 26, 43, 0.01) 20%,
+      rgba(22, 26, 43, 0.01) 80%,
+      #161a2b00 100%
+    );
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}

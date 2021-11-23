@@ -103,3 +103,10 @@ header .scrolldown a {
 header .scrolldown a:hover {
   color: vars.$secondary-color;
 }
+
+.home__image {
+  height: 100px;
+  display: block;
+  margin: 0 1.5em;
+  filter: grayscale(100%);
+}

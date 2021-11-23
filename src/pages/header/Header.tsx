@@ -4,6 +4,7 @@ import Navbar from '../../components/nav/Navbar';
 import useWindowHeight from '../../hooks/useWindowHeight';
 import { useRef } from 'react';
 import useOnScreen from '../../hooks/useOnScreen';
+import InfiniteSlide from '../../components/infinite-slide/InfiniteSlide';
 
 
 
@@ -45,6 +46,22 @@ const Header = ({ data }) => {
                     </h3>
                     <hr />
                     <ul className="social">{socials}</ul>
+                    <InfiniteSlide>
+                        <img className="home__image" src="../images/skills/angular.png" alt="tech" />
+                        <img className="home__image" src="../images/skills/react.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/javascript.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/git.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/spring-boot.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/web-development.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/sass.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/angular.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/react.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/javascript.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/git.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/spring-boot.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/web-development.png" alt="tech"/>
+                        <img className="home__image" src="../images/skills/sass.png" alt="tech"/>
+                    </InfiniteSlide>
                 </div>
             </div>
 
