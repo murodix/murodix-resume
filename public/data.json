@@ -190,10 +190,10 @@
                 "url": "https://netflix-clone-lm.netlify.app/"
             },
             {
-                "title": "Angular JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
+                "title": "Youtube-clone",
+                "category": "ReactJS, Redux",
+                "image": "youtube-clone.gif",
+                "url": "https://murodix-youtube-clone.netlify.app"
             },
             {
                 "title": "VueJS",
