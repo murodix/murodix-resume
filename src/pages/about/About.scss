@@ -1,49 +1,91 @@
-@use '../../scss/vars';
+@use "../../scss/vars";
 
-#about {
+.about {
+  background: vars.$primary-color;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
     background: vars.$secondary-color;
-    padding-top: 96px;
-    padding-bottom: 66px;
-    overflow: hidden;
- }
- #about .row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(
+      100% 0,
+      100% 77%,
+      88% 91%,
+      68% 89%,
+      53% 89%,
+      38% 88%,
+      29% 81%,
+      9% 85%,
+      0 71%,
+      0 0
+    );
+    z-index: -1;
+  }
+
+  .row {
     display: flex;
- }
- 
- #about a, #about a:visited  { color: #fff; }
- #about a:hover, #about a:focus { color: vars.$secondary-color; }
- 
- #about h2 {
+  }
+
+  a {
+    color: #fff;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover,
+    &:focus {
+      color: vars.$secondary-color;
+    }
+  }
+
+  h2 {
     font: 22px/30px;
     color: #fff;
     margin-bottom: 12px;
- }
- #about p {
+  }
+
+  p {
     line-height: 30px;
     color: vars.$primary-color;
- }
- 
- #about .about_bio {
+  }
+
+  .about_bio {
     text-align: justify;
- }
- 
- #about .profile-pic {
+  }
+
+  .profile-pic {
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 100%;
     top: 5%;
- }
- #about .contact-details { width: 41.66667%; }
- #about .download {
+  }
+
+  .contact-details {
+    width: 41.66667%;
+  }
+
+  .download {
     width: 58.33333%;
     padding-top: 6px;
- }
- #about .main-col { padding-right: 5%; }
+  }
 
- @media only screen and (max-width: 767px) {
-   #about .row {
+  .main-col {
+    padding-right: 5%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .row {
       display: block;
-   }
- }
- 
+    }
+  }
+}

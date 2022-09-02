@@ -6,20 +6,41 @@ header {
   height: 800px;
   min-height: 500px;
   width: 100%;
+  background-color: #50e3c2;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* vertically center banner section */
+header::before {
+  content: "";
+  position: absolute;
   background: #161415 url(../../assets/images/background-alternative.png)
     no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
-  text-align: center;
-  overflow: hidden;
-}
-
-/* vertically center banner section */
-header:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // clip-path: polygon(100% 0, 100% 77%, 89% 90%, 73% 90%, 59% 89%, 48% 78%, 27% 81%, 15% 81%, 0 71%, 0 0);
+  clip-path: polygon(
+    100% 0,
+    100% 77%,
+    88% 91%,
+    68% 89%,
+    53% 89%,
+    38% 88%,
+    29% 81%,
+    9% 85%,
+    0 71%,
+    0 0
+  );
+  z-index: -1;
 }
 
 header .banner {

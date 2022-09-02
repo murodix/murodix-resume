@@ -11,7 +11,7 @@ const About = ({ data }) => {
     }
 
     return (
-        <section id="about">
+        <section id="about" className='about'>
             <div className="row">
                 <div className="three columns">
                     <img

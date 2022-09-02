@@ -137,7 +137,7 @@
             {
                 "name": "ReactJS",
                 "image": "../images/skills/react.png",
-                "level": "60%"
+                "level": "80%"
             },
             {
                 "name": "JavaScript",
@@ -162,7 +162,7 @@
             {
                 "name": "Sass",
                 "image": "../images/skills/sass.png",
-                "level": "70%"
+                "level": "80%"
             }
         ],
         "testimonials" : [
