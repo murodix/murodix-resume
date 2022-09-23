@@ -1,285 +1,289 @@
 {
-    "header": {
-        "navOptions": [
-            {
-                "id": "home",
-                "description": "Home",
-                "offset": 0,
-                "class": "",
-                "linkClass": ""
-            },
-            {
-                "id": "about",
-                "description": "About",
-                "offset": 0,
-                "class": "",
-                "linkClass": ""
-            },
-            {
-                "id": "resume",
-                "description": "Resume",
-                "offset": 0,
-                "class": "",
-                "linkClass": ""
-            },
-            {
-                "id": "portfolio",
-                "description": "Works",
-                "offset": 0,
-                "isDynamic": true,
-                "class": "",
-                "linkClass": ""
-            }
-        ],
-        "info": {
-            "name": "Luis Munoz",
-            "occupation": "Full Stack Developer",
-            "description": {
-                "initialDescription": "Just a simple",
-                "descriptionCont": " in a complicated Word"
-            },
-            "image": "about/programming.png",
-            "bio": "Hey humans! I am Luis! but usally people call me Munoz. I'm Software Engineer and a technology enthusiast, I have a good understanding of technological trends, development and an expert at applying my programming skills to solve complex challenges. I am comfortable working either independently or as part of a team and able to take a leadership role. I'm dedicated to my own continual self-development, but I like working closely with others, I have an eye for detail and identifying problems.",
-            "address": {
-                "street": "232 Linden Ave",
-                "city": "Jersey City",
-                "state": "New Jersey",
-                "zipCode": "07305"
-            }
-        },
-        "socials": [
-            {
-                "name": "facebook",
-                "url": "https://www.facebook.com/lmumo95/",
-                "className": "fa fa-facebook"
-            },
-            {
-                "name": "linkedin",
-                "url": "https://www.linkedin.com/in/lmumo95/",
-                "className": "fa fa-linkedin"
-            },
-            {
-                "name": "instagram",
-                "url": "https://www.instagram.com/lmunoz95/",
-                "className": "fa fa-instagram"
-            },
-            {
-                "name": "github",
-                "url": "",
-                "className": "fa fa-github"
-            }
-        ]
+  "header": {
+    "navOptions": [
+      {
+        "id": "home",
+        "description": "Home",
+        "offset": 0,
+        "class": "",
+        "linkClass": ""
+      },
+      {
+        "id": "about",
+        "description": "About",
+        "offset": 0,
+        "class": "",
+        "linkClass": ""
+      },
+      {
+        "id": "resume",
+        "description": "Resume",
+        "offset": 0,
+        "class": "",
+        "linkClass": ""
+      },
+      {
+        "id": "portfolio",
+        "description": "Works",
+        "offset": 0,
+        "isDynamic": true,
+        "class": "",
+        "linkClass": ""
+      }
+    ],
+    "info": {
+      "name": "Luis Munoz",
+      "occupation": "Full Stack Developer",
+      "description": {
+        "initialDescription": "Just a simple",
+        "descriptionCont": " in a complicated Word"
+      },
+      "image": "about/programming.png",
+      "bio": "I'm a Software Engineer and a technology enthusiast, I have a good understanding of technological trends, development and an expert at applying my skills to solve complex challenges. ",
+      "address": {
+        "street": "232 Linden Ave",
+        "city": "Jersey City",
+        "state": "New Jersey",
+        "zipCode": "07305"
+      }
     },
-    "about": {
-        "name": "Luis Munoz",
-        "image": "../images/avatar.png",
-        "bio": "Hey humans! I am Luis Munoz! but usally people call me Munoz. I'm Software Engineer and a technology enthusiast, I have a good understanding of technological trends, development and an expert at applying my programming skills to solve complex challenges. I am comfortable working either independently or as part of a team and able to take a leadership role. I'm dedicated to my own continual self-development, but I like working closely with others, I have an eye for detail and identifying problems.",
-        "address": {
-            "street": "232 Linden Ave",
-            "city": "Jersey City",
-            "state": "New Jersey",
-            "zipCode": "07305"
-        }
-    },
-    "resume": {
-        "skillmessage": "My Programming Language Proficiency",
-        "education": [
-            {
-                "school": "",
-                "logo": "../images/resume/intec.png",
-                "url": "https://www.intec.edu.do/",
-                "degree": "Bachelor's Degree, Software Engineering",
-                "graduated": "April 2015",
-                "description": "Magna Cun-laude Honours",
-                "className": "logo-md"
-            }
-        ],
-        "works": [
-            {
-                "company": "Fiserv",
-                "logo": "../images/resume/fiserv-logo.png",
-                "url": "https://www.fiserv.com/",
-                "title": "Application Analyst",
-                "years": "Jul 2018 - Present",
-                "description": "Building payment platform, working with: AngularJS, React, Redux, SASS, PCF, Java, Spring Boots, Cassandra DB, SQL, Apache, Splunk, Jenkins, Jira."
-            },
-            {
-                "company": "Fiserv",
-                "logo": "../images/resume/fiserv-logo.png",
-                "url": "https://www.fiserv.com/",
-                "title": "Sr. Software Application",
-                "years": "Jul 2018 - Mar 2020",
-                "description": "Creating payment solutions using: AngujarJS, Java, Spring Boots, Cassandra DB, SQL, Apache, Splunk, Jenkins, Jira."
-            },
-            {
-                "company": "Okkralabs",
-                "logo": "../images/resume/okkralabs-logo.png",
-                "url": "http://www.okkralabs.com/",
-                "title": "Software Engineer",
-                "years": "Oct 2014 - Jul 2018",
-                "description": "Working as Software Developer, where I have the oportunity to create software soluction using: JavaScript, ExtJS, SASS, CSS, HTML 5 technologies and Xamarim Forms."
-            },
-            {
-                "company": "Okkralabs",
-                "logo": "../images/resume/okkralabs-logo.png",
-                "url": "http://www.okkralabs.com/",
-                "title": "Test Engineer",
-                "years": "Feb 2014 - Oct 2014",
-                "description": "Manual Testing, Mobile and Web Application Testing. Regression Testing, Functionality Testing and System Testing."
-            }
-        ],
-        "skills": [
-            {
-                "name": "AngularJS",
-                "image": "../images/skills/angular.png",
-                "level": "80%"
-            },
-            {
-                "name": "ReactJS",
-                "image": "../images/skills/react.png",
-                "level": "80%"
-            },
-            {
-                "name": "JavaScript",
-                "image": "../images/skills/javascript.png",
-                "level": "85%"
-            },
-            {
-                "name": "Git",
-                "image": "../images/skills/git.png",
-                "level": "80%"
-            },
-            {
-                "name": "Java Spring Boot",
-                "image": "../images/skills/spring-boot.png",
-                "level": "75%"
-            },
-            {
-                "name": "Web Development",
-                "image": "../images/skills/web-development.png",
-                "level": "80%"
-            },
-            {
-                "name": "Sass",
-                "image": "../images/skills/sass.png",
-                "level": "80%"
-            }
-        ],
-        "testimonials" : [
-            {
-                "name": "Rodrigo Hammerly",
-                "ocupation": "Senior Software Consultant at Blue Harvest",
-                "description": "Luis is a highly motivated developer, fast learner and very responsible team member, he is able to work smoothly, seamlessly and efficiently with other group members. He is also very proactive and unafraid of learning new technologies or getting new responsibilities.",
-                "url": "https://www.linkedin.com/in/hammerlyrodrigo/"
-            },
-            {
-                "name": "Alberto Morillo",
-                "ocupation": "Senior DBA Consultant",
-                "description": "Luis is proficient designing relational databases and using Transact-SQL. No employer will ever regret to contract him.",
-                "url": "https://www.linkedin.com/in/alberto-morillo-b0798521/"
-            }
-        ]
-
-    },
-    "portfolio": {
-        "projects": [
-            {
-                "title": "Netflix-clone",
-                "category": "ReactJS, Sass",
-                "image": "netflix-app.gif",
-                "url": "https://netflix-clone-lm.netlify.app/"
-            },
-            {
-                "title": "Youtube-clone",
-                "category": "ReactJS, Redux",
-                "image": "youtube-clone.gif",
-                "url": "https://murodix-youtube-clone.netlify.app"
-            },
-            {
-                "title": "VueJS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "Java Spring Boots",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "React JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "React JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "React JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "React JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "React JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "React JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "React JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            },
-            {
-                "title": "React JS",
-                "category": "",
-                "image": "background-alternative.png",
-                "url": ""
-            }
-        ]
-    },
-
-    "footer": {
-        "socials": [
-            {
-                "name": "facebook",
-                "url": "https://www.facebook.com/lmumo95/",
-                "className": "fa fa-facebook"
-            },
-            {
-                "name": "linkedin",
-                "url": "https://www.linkedin.com/in/lmumo95/",
-                "className": "fa fa-linkedin"
-            },
-            {
-                "name": "instagram",
-                "url": "https://www.instagram.com/lmunoz95/",
-                "className": "fa fa-instagram"
-            },
-            {
-                "name": "github",
-                "url": "",
-                "className": "fa fa-github"
-            }
-        ]
+    "socials": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/lmumo95/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/lmumo95/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/lmunoz95/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "about": {
+    "name": "Luis Munoz",
+    "image": "../images/avatar.png",
+    "bio": "I'm a Software Engineer and a technology enthusiast, I have a good understanding of technological trends, development and an expert at applying my skills to solve complex challenges.  ",
+    "address": {
+      "street": "232 Linden Ave",
+      "city": "Jersey City",
+      "state": "New Jersey",
+      "zipCode": "07305"
     }
+  },
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency",
+    "education": [
+      {
+        "school": "",
+        "logo": "../images/resume/intec.png",
+        "url": "https://www.intec.edu.do/",
+        "degree": "Bachelor's Degree, Software Engineering",
+        "graduated": "April 2015",
+        "description": "Magna Cun-laude Honours",
+        "className": "logo-md"
+      }
+    ],
+    "works": [
+      {
+        "company": "Fiserv",
+        "logo": "../images/resume/fiserv-logo.png",
+        "url": "https://www.fiserv.com/",
+        "title": "Application Analyst",
+        "years": "Jul 2018 - Present",
+        "description": "Building payment platform, working with: AngularJS, React, Redux, SASS, PCF, Java, Spring Boots, Cassandra DB, SQL, Apache, Splunk, Jenkins, Jira."
+      },
+      {
+        "company": "Fiserv",
+        "logo": "../images/resume/fiserv-logo.png",
+        "url": "https://www.fiserv.com/",
+        "title": "Sr. Software Application",
+        "years": "Jul 2018 - Mar 2020",
+        "description": "Creating payment solutions using: AngujarJS, Java, Spring Boots, Cassandra DB, SQL, Apache, Splunk, Jenkins, Jira."
+      },
+      {
+        "company": "Okkralabs",
+        "logo": "../images/resume/okkralabs-logo.png",
+        "url": "http://www.okkralabs.com/",
+        "title": "Software Engineer",
+        "years": "Oct 2014 - Jul 2018",
+        "description": "Working as Software Developer, where I have the oportunity to create software soluction using: JavaScript, ExtJS, SASS, CSS, HTML 5 technologies and Xamarim Forms."
+      },
+      {
+        "company": "Okkralabs",
+        "logo": "../images/resume/okkralabs-logo.png",
+        "url": "http://www.okkralabs.com/",
+        "title": "Test Engineer",
+        "years": "Feb 2014 - Oct 2014",
+        "description": "Manual Testing, Mobile and Web Application Testing. Regression Testing, Functionality Testing and System Testing."
+      }
+    ],
+    "skills": [
+      {
+        "name": "AngularJS",
+        "image": "../images/skills/angular.png",
+        "level": "80%"
+      },
+      {
+        "name": "ReactJS",
+        "image": "../images/skills/react.png",
+        "level": "80%"
+      },
+      {
+        "name": "JavaScript",
+        "image": "../images/skills/javascript.png",
+        "level": "85%"
+      },
+      {
+        "name": "Git",
+        "image": "../images/skills/git.png",
+        "level": "80%"
+      },
+      {
+        "name": "Java Spring Boot",
+        "image": "../images/skills/spring-boot.png",
+        "level": "75%"
+      },
+      {
+        "name": "Web Development",
+        "image": "../images/skills/web-development.png",
+        "level": "80%"
+      },
+      {
+        "name": "Sass",
+        "image": "../images/skills/sass.png",
+        "level": "80%"
+      },
+      {
+        "name": "NodeJS",
+        "image": "../images/skills/nodejs.png",
+        "level": "80%"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Rodrigo Hammerly",
+        "ocupation": "Senior Software Consultant at Blue Harvest",
+        "description": "Luis is a highly motivated developer, fast learner and very responsible team member, he is able to work smoothly, seamlessly and efficiently with other group members. He is also very proactive and unafraid of learning new technologies or getting new responsibilities.",
+        "url": "https://www.linkedin.com/in/hammerlyrodrigo/"
+      },
+      {
+        "name": "Alberto Morillo",
+        "ocupation": "Senior DBA Consultant",
+        "description": "Luis is proficient designing relational databases and using Transact-SQL. No employer will ever regret to contract him.",
+        "url": "https://www.linkedin.com/in/alberto-morillo-b0798521/"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Netflix-clone",
+        "category": "ReactJS, Sass",
+        "image": "netflix-app.gif",
+        "url": "https://netflix-clone-lm.netlify.app/"
+      },
+      {
+        "title": "Youtube-clone",
+        "category": "ReactJS, Redux",
+        "image": "youtube-clone.gif",
+        "url": "https://murodix-youtube-clone.netlify.app"
+      },
+      {
+        "title": "VueJS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "Java Spring Boots",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "React JS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "React JS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "React JS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "React JS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "React JS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "React JS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "React JS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      },
+      {
+        "title": "React JS",
+        "category": "",
+        "image": "background-alternative.png",
+        "url": ""
+      }
+    ]
+  },
+
+  "footer": {
+    "socials": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/lmumo95/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/lmumo95/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/lmunoz95/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "",
+        "className": "fa fa-github"
+      }
+    ]
+  }
 }

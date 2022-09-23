@@ -30,7 +30,7 @@
 .skills-list {
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 
   .skill__item {
@@ -53,22 +53,25 @@
       }
 
       .skill__item__level {
-        position: absolute;
-        display: block;
-        top: 30%;
-        > p {
-          color: white;
-          @include mixins.rem("font-size", 24px);
-        }
+        opacity: 1;
       }
     }
 
     &__level {
-      display: none;
+      top: 30%;
+      transition: all 0.3s ease-in;
+      position: absolute;
+      opacity: 0;
+
+      > p {
+        color: white;
+        @include mixins.rem("font-size", 24px);
+      }
     }
 
     &__image {
       height: 150px;
+      transition: all 0.5s ease-in-out;
     }
   }
 }
